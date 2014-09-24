@@ -86,8 +86,8 @@ hr.sepLog{float: left;margin:10px 0;
 width: 100%;}
 #loginFirmador p{color:#ccc;font-size:1em;width:100%;text-align:center;margin:20px 0;float:left;}
 div.access{position:relative;}
-a.access{position:absolute;bottom:0;left:0;z-index:10;width:100%;}
-.container{height:100%;}
+a.access{position:absolute;bottom:0;left:0;z-index:10;width:100%;height:10%;font-size:2em;line-height:2.3em;}
+body.splash .container{height:100%;width:100%;padding:0;}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
