@@ -2,7 +2,7 @@
 
 @media (max-width: 767px) and (orientation : portrait){
 /*body.login{padding-top:30px;}*/
-  body.login .row{margin: auto;height: 500px;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 90%;  }
+  body.login .row{margin: auto;height: auto!important;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 90%;  }
 }
 @media (max-width: 767px)  {
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
