@@ -1,0 +1,90 @@
+/*absSplash.png*/
+
+*, a.btn{outline:0;-webkit-overflow-scrolling: touch;}
+html {
+position: relative;
+min-height: 100%;
+  background-color: #295f77; /* Old browsers */
+}
+body.splash {
+/* Margin bottom by footer height */
+color:#fff;
+
+background:transparent url('../img/absSplash.png') no-repeat center center;
+/*background:transparent url('http://lorempixel.com/output/city-h-c-276-283-5.jpg') no-repeat center center;*/
+
+}
+html, body{
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  color:#fff;
+  font-size:100%;
+  padding:0;
+  margin:0;
+  background: #295f77; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5NWY3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMTMyNTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #295f77 0%, #113251 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#295f77), color-stop(100%,#113251)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #295f77 0%,#113251 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #295f77 0%,#113251 100%); /* Opera 11.10+ */
+  /*background: -ms-linear-gradient(left, #295f77 0%,#113251 100%); /* IE10+ */*/
+  background: linear-gradient(to right, #295f77 0%,#113251 100%); /* W3C */
+  background-color: #295f77; /* Old browsers */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#295f77', endColorstr='#113251',GradientType=1 ); /* IE6-8 */*/
+
+
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+.testing{display:none;}
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+/* Set the fixed height of the footer here */
+height: 60px;
+/*background-color: #f5f5f5;*/
+}
+
+.footer a.btn {
+margin :0;
+width:100%;
+height:100%;
+line-height:48px;
+font-size:30px;
+}
+
+.logo{width:644px;height:660px;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
+.logo img{width:50%;height:50%;}
+.row .col-md-12.logoLogin{height:250px;width:100%;text-align:center;}
+.smartLandscape{position:absolute;top:0;right:0;width:49%;height:40%;background-color:red;background:transparent url('../img/logoLandscape.png') no-repeat center center;display:none!important;}
+#loginFirmador{position:relative;float:left;}
+#loginFirmador .filaInput{width:100%;padding:25px 50px;background-color:rgba(255,255,255,0.3);margin-bottom:30px;height:100px;background-color:#5d788d;}
+#loginFirmador input{width:100%;height:100%;background-color:transparent;border:none;color:#fff;}
+
+
+/*personalizar placeholders*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #b2c3cc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #b2c3cc;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #b2c3cc;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #b2c3cc;
+}
+/*personalizar placeholders*/
+.filaSubmit {width:100%;margin-bottom:10px;float:left;}
+.filaSubmit button[type="submit"], a.loguearse{width:100%;height:100%;font-size:2em;}
+hr.sepLog{float: left;margin:10px 0;
+width: 100%;}
+#loginFirmador p{color:#ccc;font-size:1em;width:100%;text-align:center;margin:20px 0;float:left;}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
