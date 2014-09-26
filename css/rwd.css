@@ -31,7 +31,7 @@ width: 49%;clear: both;}
   .filaInput.entDv{float:left;}
   .filaSubmit {width:49%;height:40px;font-size:1em;float:left;margin-left:1%;}
   .filaSubmit button[type="submit"]{width:100%;height:100%;font-size:1em;}
-  .smartLandscape{display:block!important;}
+  .smartLandscape{display:block!important;background-colo:red;}
   .logoLogin{display:none!important;}
   .filaSubmit button[type="submit"], a.loguearse{line-height:28px;}
 
