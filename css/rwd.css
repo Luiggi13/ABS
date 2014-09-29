@@ -54,7 +54,7 @@ position: absolute;
 z-index: 10;}
 */
 .col-xs-11 {
-    width: 92.667%!important;}
+    width: 91.667%!important;}
 }
 @media (max-width: 767px) and (orientation : landscape) {
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
