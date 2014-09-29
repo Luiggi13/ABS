@@ -40,8 +40,13 @@ margin: auto;}
 .contOptions .desc1 span {line-height: 17px;}
 .contOptions .desc2 span {line-height: 40px;}
 .contOptions .desc1, .contOptions .desc2{padding-left:10px;}
+.loading{height: 120px !important;
+top: 11%;}
+.cargando{height: 20px !important;}
+.moduloFirma .middler {
+    height: 470px;}
 
-
+.moduloFirma .bottomer h2{font-size:20px;}
 @media (max-width: 767px) and (orientation : landscape) {
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
 body.login{padding-top:20px;}
