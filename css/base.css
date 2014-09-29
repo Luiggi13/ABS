@@ -95,7 +95,7 @@ body.login .row{margin: auto;height: auto!important;position: absolute;top: 0px;
 
 body.firma .header-firma{height:96px;background-color:#dedfde;margin-bottom:19px;border-bottom:1px solid #6b6d6b;}
 .header-firma img{float:left;margin:22px 15px 0 30px;}
-.header-firma .title{float:left;width:300px;font-size:35px;margin-top:22px;}
+.header-firma .title{float:left;font-size:35px;margin-top:22px;}
 .moduloFirma {border:1px solid #6b6d6b;border-radius:5px;background-color:#f7f7f7;}
 .moduloFirma .top{height:78px;border-bottom:2px solid #6b6d6b;}
 .moduloFirma .top h2{float:left;width:100%;font-size:18px;text-align:center;line-height:68px;height:100%;margin:0;}
