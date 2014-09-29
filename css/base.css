@@ -114,7 +114,8 @@ body.firma .header-firma{height:96px;background-color:#dedfde;margin-bottom:19px
 .moduloFirma .middler{height:540px;border-bottom:2px solid #6b6d6b;position:relative;}
 .moduloFirma .middler p{float:left;width:100%;font-size:25px;text-align:left;padding:0 30px;line-height:40px;}
 .moduloFirma .middler > div{float:left;margin:0 3%;width:94%;border:1px solid #ccc;border-radius:5px;padding:10px;}
-.contOptions div{float:left;height:36px;}
+
+.contOptions div{float:left;height:36px;margin-bottom:20px;}
 .contOptions .option1, .contOptions .desc1, .contOptions .option2, .contOptions .desc2{height:51px;}
 .contOptions .desc1 span, .contOptions .desc2 span{height:50px;font-size:20px;line-height:37px;}
 .moduloFirma .bottomer{height:81px;border-bottom:2px solid #6b6d6b;}
