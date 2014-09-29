@@ -52,8 +52,10 @@ height: 50px;
 float: right;
 position: absolute;
 z-index: 10;}
-
-}*/
+*/
+.col-xs-11 {
+    width: 92.667%!important;}
+}
 @media (max-width: 767px) and (orientation : landscape) {
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
 body.login{padding-top:20px;}
@@ -85,7 +87,9 @@ html.firma, body.firma{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949694', endColorstr='#949694',GradientType=1 )!important; /* IE6-8 */
 }
 
-
+.col-xs-11 {
+    width: 92.667%!important;}
+}
 }
 
 @media (min-width: 768px) and (orientation : landscape){
