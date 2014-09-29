@@ -40,7 +40,7 @@ margin: auto;}
 
 .contOptions .desc1 span, .contOptions .desc2 span {height: 50px;font-size: 15px;}
 .contOptions {margin:0px 3% 40px 3%!important;}
-.contOptions .desc1 span {line-height: 17px;}
+.contOptions .desc1 span {line-height: 4px;}
 .contOptions .desc2 span {line-height: 40px;}
 .contOptions .desc1, .contOptions .desc2{padding-left:10px;}
 .loading{top:0%;}
@@ -56,7 +56,7 @@ position: absolute;
 z-index: 10;}
 */
 .col-xs-11 {
-    width: 92.667%;}
+    width: 91.667%;}
 }
 @media (max-width: 767px) and (orientation : landscape) {
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
@@ -74,6 +74,7 @@ width: 49%;clear: both;}
   .smartLandscape{display:block!important;}
   .logoLogin{display:none!important;}
   .filaSubmit button[type="submit"], a.loguearse{line-height:28px;}
+  .contOptions .desc1 span {line-height: 44px;}
 
 html.firma, body.firma{
   background: #949694!important; /* Old browsers */
@@ -96,12 +97,14 @@ html.firma, body.firma{
 
 @media (min-width: 768px) and (orientation : landscape){
   body.login{padding-top:50px;}
+
 }
 @media (min-width: 768px) and (orientation : portrait){
 
 }
 @media (min-width: 768px) {
-
+.moduloFirma .middler p {font-size: 20px;}
+.contOptions .desc1 span, .contOptions .desc2 span {font-size: 18px;}
   body.splash{background: transparent url(../img/absSplash767.png) no-repeat center center;}
   #loginFirmador .filaInput{width:100%;padding:10px 50px;background-color:rgba(255,255,255,0.3);margin-bottom:30px;height:60px;}
     .filaInput.usrDv, .filaInput.pwdDv{float:left;width:49%;}
