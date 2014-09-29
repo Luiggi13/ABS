@@ -14,6 +14,7 @@ background:transparent url('../img/absSplash.png') no-repeat center center;
 /*background:transparent url('http://lorempixel.com/output/city-h-c-276-283-5.jpg') no-repeat center center;*/
 
 }
+body.firma{background:none;background-color:#949694}
 html, body{
   position: relative;
   -webkit-overflow-scrolling: touch;
@@ -91,6 +92,89 @@ body.splash .container{height:100%;width:100%;padding:0;}
 body.login .container{height:100%;}
 body.login .col-md-12.myform{height:auto!important;}
 body.login .row{margin: auto;height: auto!important;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 90%;  }
+
+body.firma .header-firma{height:96px;background-color:#dedfde;margin-bottom:19px;border-bottom:1px solid #6b6d6b;}
+.header-firma img{float:left;margin:22px 15px 0 30px;}
+.header-firma .title{float:left;width:300px;font-size:35px;margin-top:22px;}
+.moduloFirma {border:1px solid #6b6d6b;border-radius:5px;background-color:#f7f7f7;}
+.moduloFirma .top{height:78px;border-bottom:2px solid #6b6d6b;}
+.moduloFirma .top h2{float:left;width:100%;font-size:18px;text-align:center;line-height:68px;height:100%;margin:0;}
+.moduloFirma .middler{height:540px;border-bottom:2px solid #6b6d6b;position:relative;}
+.moduloFirma .middler p{float:left;width:100%;font-size:25px;text-align:left;padding:0 30px;line-height:40px;}
+.moduloFirma .middler > div{float:left;margin:0 3%;width:94%;border:1px solid #ccc;border-radius:5px;padding:10px;}
+.contOptions div{float:left;height:36px;}
+.contOptions .option1, .contOptions .desc1, .contOptions .option2, .contOptions .desc2{height:51px;}
+.contOptions .desc1 span, .contOptions .desc2 span{height:50px;font-size:20px;line-height:37px;}
+.moduloFirma .bottomer{height:81px;border-bottom:2px solid #6b6d6b;}
+.moduloFirma .bottomer h2{float:left;width:100%;font-size:30px;text-align:center;line-height:68px;height:100%;margin:0;}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+/*loading ........*/
+.cargando{display:none;}
+.loading {
+  position: absolute;
+  border-color:transparent!important;
+  height:120px!important;
+  top: 20%;
+  left: 23%;
+}
+
+.loading .bullet {
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background: #65a3ff;
+  -webkit-animation: animIn 1s ease-in-out 0s infinite;
+          animation: animIn 1s ease-in-out 0s infinite;
+}
+.loading .bullet:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.loading .bullet:nth-child(2) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.loading .bullet:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loading .bullet:nth-child(4) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+@-webkit-keyframes animIn {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes animIn {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+/*loading ........*/
