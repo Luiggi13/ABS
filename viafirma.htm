@@ -20,6 +20,15 @@
 <![endif]-->
    </head>
    <body class="firma">
+     <div class="overlayViaFirma">
+         <div class="contentViaFirma"><strong>Cargando documentos...</strong></div>
+       <div class="loading">
+         <div class="bullet"></div>
+         <div class="bullet"></div>
+         <div class="bullet"></div>
+         <div class="bullet"></div>
+       </div>
+     </div>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-firma">
@@ -46,14 +55,9 @@
             <div class="desc2 col-xs-11 col-sm-11 col-md-11 col-lg-11"><span>ANF PF Nuevo Activo</span></div>
           </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 loading cargando">
-            <div class="loading">
-              <div class="bullet"></div>
-              <div class="bullet"></div>
-              <div class="bullet"></div>
-              <div class="bullet"></div>
-            </div>
-          </div>
+          <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 loading cargando"> -->
+
+          <!-- </div> -->
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottomer">
         <h2>www.viafirma.com/mobile</h2>
@@ -80,6 +84,8 @@
               keyChainActivado = true;
               anfActivado =  false;
               $('.cargando').css('display','block');
+              $('.overlayViaFirma').css('display','block');
+              $('.container').css('display','none');
 
 
               setTimeout(function(){

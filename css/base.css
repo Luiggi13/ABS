@@ -50,6 +50,8 @@ html, body{
 }
 /* Sticky footer styles
 -------------------------------------------------- */
+.overlayViaFirma{height:100%;position:absolute;top:0;left:0;width:100%;background-color:rgba(0,0,0,.5);z-index:50;display:none;}
+.contentViaFirma{position: absolute;top: 0;color: white;z-index: 51;left: 0;right: 0;bottom: 0;margin: auto;width: 200px;height: 100px;text-align:center;}
 .testing{display:none;}
 .footer {
 position: absolute;
@@ -101,6 +103,7 @@ width: 100%;}
 div.access{position:relative;}
 a.access{position:absolute;bottom:0;left:0;z-index:10;width:100%;font-size:2em;line-height:2.3em;}
 body.splash .container{height:100%;width:100%;padding:0;}
+body.firma .container{padding:0;}
 body.login .container{height:100%;}
 body.login .col-md-12.myform{height:auto!important;}
 body.login .row{margin: auto;height: auto!important;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 90%;  }
@@ -111,7 +114,7 @@ body.firma .header-firma{height:96px;background-color:#dedfde;margin-bottom:19px
 .moduloFirma {border:1px solid #6b6d6b;border-radius:5px;background-color:#f7f7f7;}
 .moduloFirma .top{height:78px;border-bottom:2px solid #6b6d6b;}
 .moduloFirma .top h2{float:left;width:100%;font-size:18px;text-align:center;line-height:68px;height:100%;margin:0;}
-.moduloFirma .middler{height:540px;border-bottom:2px solid #6b6d6b;position:relative;}
+.moduloFirma .middler{height:380px;border-bottom:2px solid #6b6d6b;position:relative;}
 .moduloFirma .middler p{float:left;width:100%;font-size:25px;text-align:left;padding:0 30px;line-height:40px;}
 .moduloFirma .middler > div{float:left;margin:0 3%;width:94%;border:1px solid #ccc;border-radius:5px;padding:10px;}
 
@@ -129,8 +132,8 @@ body.firma .header-firma{height:96px;background-color:#dedfde;margin-bottom:19px
   position: absolute;
   border-color:transparent!important;
   height:120px!important;
-  top: 20%;
-  left: 23%;
+  top: 50%;
+  left: 50%;
 }
 
 .loading .bullet {

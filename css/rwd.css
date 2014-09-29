@@ -43,10 +43,10 @@ margin: auto;}
 .contOptions .desc1 span {line-height: 4px;}
 .contOptions .desc2 span {line-height: 40px;}
 .contOptions .desc1, .contOptions .desc2{padding-left:10px;}
-.loading{top:0%;}
+/*.loading{top:0%;}*/
 .cargando{height: 20px !important;}
 .moduloFirma .middler {
-    height: 470px;}
+    height: 380px;}
 
 .moduloFirma .bottomer h2{font-size:20px;}
 /*.firmar a{width: 50px;
