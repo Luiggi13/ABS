@@ -37,11 +37,11 @@ right: 0px;
 margin: auto;}
 
 .contOptions .desc1 span, .contOptions .desc2 span {height: 50px;font-size: 15px;}
+.contOptions {margin:0px 3% 40px 3%!important;}
 .contOptions .desc1 span {line-height: 17px;}
 .contOptions .desc2 span {line-height: 40px;}
 .contOptions .desc1, .contOptions .desc2{padding-left:10px;}
-.loading{height: 120px !important;
-top: 7%;}
+.loading{top:0%;}
 .cargando{height: 20px !important;}
 .moduloFirma .middler {
     height: 470px;}
