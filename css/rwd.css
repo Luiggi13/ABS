@@ -27,7 +27,7 @@
     padding: 0px 30px;
     line-height: 40px;
 }
-.option1, .option2, .option1 img, .option2 img{width:20px;}
+.option1, .option2, .option1 img, .option2 img{width:30px;}
 .option1, .option2{position:relative;}
 .option1 img, .option2 img{position: absolute;
 top: -7px;
