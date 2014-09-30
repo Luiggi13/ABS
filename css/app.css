@@ -289,6 +289,15 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 @media (min-width: 1200px) {
   .contCards.odd{margin-right:1%;}
   .contCards.even{margin-right:1%;}
+  .contCards .ver, .contCards .firmar {
+      float: left;
+      width: 18%;
+      /*
+      border-bottom: 67px solid #30d9c4;
+      border-right: 67px solid transparent;
+      position:relative;*/
+  }
+  .data .infoData{width: 64%;}
 }
 
 @media only screen and (min-width : 1200px) {

@@ -7,10 +7,12 @@
     <title>ABS - El firmador</title>
 
 
+      <link rel="stylesheet" type="text/css" href="css/base.css" />
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
       <link rel="stylesheet" type="text/css" href="css/app.css" />
       <link rel="stylesheet" type="text/css" href="css/rwd.css" />
+
 <!--[if gte IE 9]>
 <style type="text/css">
 .gradient {
@@ -21,7 +23,15 @@
   </head>
 
 <body class="gradient">
-
+<div class="overlayViaFirma">
+    <div class="contentFirmant"><strong>Firmant document...</strong></div>
+  <div class="loading white">
+    <div class="bullet"></div>
+    <div class="bullet"></div>
+    <div class="bullet"></div>
+    <div class="bullet"></div>
+  </div>
+</div>
 <div class="container">
    <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 docsFilter filtros">
@@ -275,8 +285,37 @@
       <script type="text/javascript">
 
 
-           $( ".ver img, .leftSign" ).click(function() {
-        //  alert('Firmant...');
+           $( ".ver" ).click(function() {
+//
+
+        $('.overlayViaFirma').css('display','block');
+        $(this).next().css('margin-left','18%');
+        $(this).hide();
+
+            var bloque = $(this).parent().parent();
+        setTimeout(function(){
+          $('.overlayViaFirma').css('display','none');
+          bloque.remove();
+          var $container = $('#gral');
+          $container.isotope('destroy');
+          var $container = $('#gral');
+          $container.isotope({
+            columnWidth: '.col-xs-12.col-sm-6.col-md-6.col-lg-4.contCards',
+              filter: '*',
+              animationOptions: {
+                  duration: 750,
+                  easing: 'linear',
+                  queue: false
+              },
+              masonry: {
+            columnWidth: 20,gutter:2
+          }
+          });
+
+        }, 1000);
+
+
+
          });
 
          $( ".firmar img, .rightSign" ).click(function() {
@@ -290,6 +329,22 @@
 
 <script type="text/javascript">
 
+
+ function newIsotope(){
+   var $container = $('#gral');
+   $container.isotope({
+     columnWidth: '.col-xs-12.col-sm-6.col-md-6.col-lg-4.contCards',
+       filter: '*',
+       animationOptions: {
+           duration: 750,
+           easing: 'linear',
+           queue: false
+       },
+       masonry: {
+     columnWidth: 20,gutter:2
+   }
+   });
+ }
 $(window).load(function(){
     var $container = $('#gral');
     $container.isotope({
