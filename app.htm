@@ -310,12 +310,12 @@ $(window).load(function(){
 //
 // });
 
-    $('#combo option').click(function(){
+    $('#combo').change(function(){
       // option:selected
         // $('.docsFilter .current').removeClass('current');
         // $(this).addClass('current');
 
-        var selector = $(this).attr('data-filter');
+        var selector = $('#combo option:selected').attr('data-filter');
         $container.isotope({
             filter: selector,
             animationOptions: {
