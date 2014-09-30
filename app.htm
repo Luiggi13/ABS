@@ -276,6 +276,82 @@
 </div>
 </div>
 </div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contCards decreto">
+<div class="clasificador">Decreto aprobación presupuesto fiestas 2014</div>
+<div class="desc">D E C R E T O</div>
+<div class="data">
+<div class="ver">
+   <img src="img/sign-icon.png" alt="" />
+   <input type="image"  src="img/cornerL.png" class="leftSign"/>
+</div>
+<div class="infoData">16 de Abril del 2014</div>
+<div class="firmar">
+   <a href="doc1.pdf" target="_blank"><img src="img/view-icon.png" alt="" /></a>
+   <a href="doc1.pdf" target="_blank"><input type="image"  src="img/cornerR.png" class="rightSign"/></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contCards decreto">
+<div class="clasificador">Decreto aprobación presupuesto fiestas 2014</div>
+<div class="desc">D E C R E T O</div>
+<div class="data">
+<div class="ver">
+   <img src="img/sign-icon.png" alt="" />
+   <input type="image"  src="img/cornerL.png" class="leftSign"/>
+</div>
+<div class="infoData">16 de Abril del 2014</div>
+<div class="firmar">
+   <a href="doc1.pdf" target="_blank"><img src="img/view-icon.png" alt="" /></a>
+   <a href="doc1.pdf" target="_blank"><input type="image"  src="img/cornerR.png" class="rightSign"/></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contCards decreto">
+<div class="clasificador">Decreto aprobación presupuesto fiestas 2014</div>
+<div class="desc">D E C R E T O</div>
+<div class="data">
+<div class="ver">
+   <img src="img/sign-icon.png" alt="" />
+   <input type="image"  src="img/cornerL.png" class="leftSign"/>
+</div>
+<div class="infoData">16 de Abril del 2014</div>
+<div class="firmar">
+   <a href="doc1.pdf" target="_blank"><img src="img/view-icon.png" alt="" /></a>
+   <a href="doc1.pdf" target="_blank"><input type="image"  src="img/cornerR.png" class="rightSign"/></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contCards decreto">
+<div class="clasificador">Decreto aprobación presupuesto fiestas 2014</div>
+<div class="desc">D E C R E T O</div>
+<div class="data">
+<div class="ver">
+   <img src="img/sign-icon.png" alt="" />
+   <input type="image"  src="img/cornerL.png" class="leftSign"/>
+</div>
+<div class="infoData">16 de Abril del 2014</div>
+<div class="firmar">
+   <a href="doc1.pdf" target="_blank"><img src="img/view-icon.png" alt="" /></a>
+   <a href="doc1.pdf" target="_blank"><input type="image"  src="img/cornerR.png" class="rightSign"/></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contCards decreto">
+<div class="clasificador">Decreto aprobación presupuesto fiestas 2014</div>
+<div class="desc">D E C R E T O</div>
+<div class="data">
+<div class="ver">
+   <img src="img/sign-icon.png" alt="" />
+   <input type="image"  src="img/cornerL.png" class="leftSign"/>
+</div>
+<div class="infoData">16 de Abril del 2014</div>
+<div class="firmar">
+   <a href="doc1.pdf" target="_blank"><img src="img/view-icon.png" alt="" /></a>
+   <a href="doc1.pdf" target="_blank"><input type="image"  src="img/cornerR.png" class="rightSign"/></a>
+</div>
+</div>
+</div>
+
 
    </div>
 </div>
@@ -298,8 +374,9 @@
           bloque.remove();
           var $container = $('#gral');
           $container.isotope('destroy');
-          var $container = $('#gral');
-          $container.isotope({
+          $container.masonry( 'on', 'removeComplete', function( isoInstance, removedItems ) {} )
+          var $container2 = $('#gral');
+          $container2.isotope({
             columnWidth: '.col-xs-12.col-sm-6.col-md-6.col-lg-4.contCards',
               filter: '*',
               animationOptions: {
@@ -312,10 +389,10 @@
           }
           });
 
-        }, 1000);
-
-
-
+        }, 5000);
+setTimeout(function(){
+location.reload();
+}, 5200);
          });
 
          $( ".firmar img, .rightSign" ).click(function() {
@@ -371,6 +448,22 @@ $(window).load(function(){
         // $(this).addClass('current');
 
         var selector = $('#combo option:selected').attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
+
+ $('.docsFilter a').click(function(){
+        $('.docsFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
             animationOptions: {
