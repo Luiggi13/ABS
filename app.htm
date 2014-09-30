@@ -25,12 +25,18 @@
 <div class="container">
    <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 docsFilter filtros">
-
-					            <a href="#" data-filter="*" class="btn btn-primary current">Todos</a>
+         <select id="combo">
+          <option value="Todos" data-filter="*">Todos</option>
+          <option value="Decreto" data-filter=".decreto">Decreto</option>
+          <option value="Factura" data-filter=".factura">Factura</option>
+          <option value="Propuesta" data-filter=".propuesta">Propuesta</option>
+          <option value="Informes" data-filter=".informes">Informes</option>
+        </select>
+					            <!-- <a href="#" data-filter="*" class="btn btn-primary current">Todos</a>
                       <a href="#" data-filter=".decreto" class="btn btn-primary current">Decreto</a>
                       <a href="#" data-filter=".factura" class="btn btn-primary current">Factura</a>
                       <a href="#" data-filter=".propuesta" class="btn btn-primary current">Propuesta</a>
-                      <a href="#" class="btn btn-primary current midescarga">Informes</a>
+                      <a href="#" data-filter=".informes" class="btn btn-primary current">Informes</a> -->
 						</div>
     </div>
    <div class="row" id="gral">
@@ -280,13 +286,10 @@
 //
 //
 
-
       </script>
 
 <script type="text/javascript">
-    $('.midescarga').click(function(){
-window.open("doc1.pdf", "_system");
-}
+
 $(window).load(function(){
     var $container = $('#gral');
     $container.isotope({
@@ -301,10 +304,16 @@ $(window).load(function(){
       columnWidth: 20,gutter:2
     }
     });
+// $( "#combo" ).change(function() {
+//         var text = $("#combo option:selected").text();
+//         var value = $("#combo option:selected").val();
+//
+// });
 
-    $('.docsFilter a').click(function(){
-        $('.docsFilter .current').removeClass('current');
-        $(this).addClass('current');
+    $('#combo option').click(function(){
+      // option:selected
+        // $('.docsFilter .current').removeClass('current');
+        // $(this).addClass('current');
 
         var selector = $(this).attr('data-filter');
         $container.isotope({
@@ -320,7 +329,10 @@ $(window).load(function(){
 });
 
 </script>
-
+<style type="text/css">
+   .filtros{height:30px;margin-bottom:20px;}
+   #combo{width:99%;float:left;height:100%;margin:10px 0;border:none;background-color:#1a6680;color:#fff;}
+ </style>
 
 </body>
 </html>
