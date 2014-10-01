@@ -116,5 +116,16 @@
             }
         });
       </script>
+      <script type="text/javascript">
+        $(document).live("pagechange",function(){
+            var page = $.mobile.activePage.attr("id");
+        });
+        document.addEventListener("deviceready", function () {
+            document.addEventListener("menubutton", menuKeyDown, true);
+        }, false);
+        function menuKeyDown() {
+                alert('Menu button pressed.');
+            }
+    </script>
    </body>
 </html>
