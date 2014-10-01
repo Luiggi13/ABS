@@ -24,6 +24,7 @@
 
 <body class="gradient">
 <div class="overlayViaFirma">
+  <div id="certificat"></div>
     <div class="contentFirmant"><strong>Firmant document...</strong></div>
   <div class="loading white">
     <div class="bullet"></div>
@@ -35,18 +36,18 @@
 <div class="container">
    <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 docsFilter filtros">
-         <select id="combo">
+         <!-- <select id="combo">
           <option value="Todos" data-filter="*">Todos</option>
           <option value="Decreto" data-filter=".decreto">Decreto</option>
           <option value="Factura" data-filter=".factura">Factura</option>
           <option value="Propuesta" data-filter=".propuesta">Propuesta</option>
           <option value="Informes" data-filter=".informes">Informes</option>
-        </select>
-					            <!-- <a href="#" data-filter="*" class="btn btn-primary current">Todos</a>
+        </select> -->
+					            <a href="#" data-filter="*" class="btn btn-primary current">Todos</a>
                       <a href="#" data-filter=".decreto" class="btn btn-primary current">Decreto</a>
                       <a href="#" data-filter=".factura" class="btn btn-primary current">Factura</a>
                       <a href="#" data-filter=".propuesta" class="btn btn-primary current">Propuesta</a>
-                      <a href="#" data-filter=".informes" class="btn btn-primary current">Informes</a> -->
+                      <a href="#" data-filter=".informes" class="btn btn-primary current">Informes</a>
 						</div>
     </div>
    <div class="row" id="gral">
@@ -365,6 +366,7 @@
 //
 
         $('.overlayViaFirma').css('display','block');
+        window.open('viafirma.htm');
         $(this).next().css('margin-left','18%');
         $(this).hide();
 
@@ -478,7 +480,7 @@ $(window).load(function(){
 
 </script>
 <style type="text/css">
-   .filtros{height:30px;margin-bottom:20px;}
+   /*.filtros{height:50px;margin-bottom:20px;}*/
    #combo{width:99%;float:left;height:100%;margin:10px 0;border:none;background-color:#1a6680;color:#fff;}
  </style>
 
